@@ -4,7 +4,7 @@ function gerarRelatorio(){
 
    // var url = "http://localhost:8080/eventos?ini="+dtIni+"&fim="+dtFim;
 
-   var url="https://eventdash-isidro.herokuapp.com/eventos?ini="+dtIni+"&fim"+dtFim;
+   var url="https://eventdash-isidro.herokuapp.com/eventos?ini="+dtIni+"&fim="+dtFim;
 
     fetch(url).then(res => res.json()).then(listaEventos => preencheTabela(listaEventos));
 
