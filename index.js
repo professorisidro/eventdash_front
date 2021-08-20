@@ -28,7 +28,8 @@ function enviarDados(){
     };
 
     // passos 3 e 4
-    fetch("http://localhost:8080/login",cabecalho).then(res => trataResultado(res));
+    //fetch("http://localhost:8080/login",cabecalho).then(res => trataResultado(res));
+    fetch("https://eventdash-isidro.herokuapp.com/login",cabecalho).then(res => trataResultado(res));
 }
 
 function trataResultado(res){
